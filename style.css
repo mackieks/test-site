@@ -4,7 +4,7 @@
   --font-size: 0.3vw;
   --dot-size: 0.3vw;
   --shine-size: 0.3vw;
-  --margin-top: 0.3vh;
+  --margin-top: 50vh;
 }
 
 #center {
@@ -41,6 +41,7 @@ div {
 
 #ui {
   transform-style: preserve-3d;
+  transform: translateY(-15vh);
 }
 #ui .text {
   position: absolute;
@@ -162,6 +163,8 @@ div {
   display: flex;
   justify-content: center;
   position: relative;
+  align-items: flex-start;
+  transform: translateY(-15vh);
 }
 #image-container img {
   max-width: 70%;
