@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   const image = document.querySelector("#image-container img");
   const root = document.documentElement;
-  let previousWidth = window.innerWidth;
-  let previousHeight = window.innerHeight
 
   function updateStyles() {
     
@@ -85,14 +83,6 @@ document.addEventListener("DOMContentLoaded", function() {
   updateStyles();
   window.addEventListener("resize", function() {
     updateStyles();
-    const currentWidth = window.innerWidth;
-    const currentHeight = window.innerHeight;
-
-    if (currentWidth !== previousWidth || currentHeight !== previousHeight) {
-      console.log('Window dimensions changed');
-      previousWidth = currentWidth;
-      previousHeight = currentHeight;
-    }
   });
 
   // Ensure functions run a few times after the page is finished loading
