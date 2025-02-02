@@ -180,6 +180,7 @@ div {
   font-family: "Neue Haas Grotesk Text Pro Medium";
   color: #b400b4;
   font-size: var(--body-size);
+  filter: drop-shadow(0 0 0.5rem #500064);
 }
 #image-container .glowing-dot {
   position: absolute;
@@ -279,11 +280,12 @@ div {
   background-color: rgba(70, 70, 70, 0.25);
   padding: var(--button-padding) var(--button-padding2);
   margin: 0;
-  border-radius: 50px;
+  border-radius: 100px;
   cursor: pointer;
   border: 1px solid #d615c6;
   color: #d615c6;
   text-shadow: 0 0 4px #d615c6;
+  text-decoration: none;
   box-shadow: inset 0 0 2px #d615c6, 0 0 2px #d615c6;
   filter: drop-shadow(0 0 0.1rem #3c0050);
   transition: box-shadow 0.3s, color 0.3s, text-shadow 0.3s;
@@ -298,11 +300,12 @@ div {
   background-color: rgba(70, 70, 70, 0.25);
   padding: var(--button-padding) var(--button-padding2);
   transform: translateX(var(--button-offset));
-  border-radius: 50px;
+  border-radius: 100px;
   cursor: pointer;
   border: 1px solid #7645ff;
   color: #7645ff;
   text-shadow: 0 0 4px #7645ff;
+  text-decoration: none;
   box-shadow: inset 0 0 2px #7645ff, 0 0 2px #7645ff;
   filter: drop-shadow(0 0 0.1rem #3c0050);
   transition: box-shadow 0.3s, color 0.3s, text-shadow 0.3s;
@@ -318,5 +321,18 @@ div {
 }
 
 #mask2 {
+  filter: drop-shadow(0 0 0.5rem #500064);
+}
+
+#credits {
+  display: absolute;
+  width: var(--nand-left);
+  position: absolute;
+  justify: center;
+  left: var(--body-left);
+  top: var(--credits-below-top);
+  font-family: "Neue Haas Grotesk Text Pro Medium";
+  color: #5a0064;
+  font-size: var(--credits-size);
   filter: drop-shadow(0 0 0.5rem #500064);
 }
