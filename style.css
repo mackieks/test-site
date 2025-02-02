@@ -168,7 +168,7 @@ div {
 }
 #image-container img {
   height: var(--wiiu-height);
-  width: 100%;
+  width: var(--wiiu-width);
 }
 #image-container #body-text {
   display: flex;
