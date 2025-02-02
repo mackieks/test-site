@@ -41,7 +41,7 @@ div {
 
 #ui {
   transform-style: preserve-3d;
-  transform: translateY(-18vh);
+  transform: translateY(-15vh);
 }
 #ui .text {
   position: absolute;
@@ -270,14 +270,14 @@ div {
   top: var(--header-below-top);
   font-family: "Neue Haas Grotesk Text Pro Medium";
   color: #b400b4;
-  font-size: var(--header-size);
+  font-size: var(--button-one-size);
   /* Neon btn */
   /* Neon btn */
 }
 #text-below .btn-neon {
   display: inline-block;
   background-color: rgba(70, 70, 70, 0.25);
-  padding: 10px 20px;
+  padding: var(--button-padding) var(--button-padding2);
   margin: 0;
   border-radius: 50px;
   cursor: pointer;
@@ -286,27 +286,31 @@ div {
   text-shadow: 0 0 4px #d615c6;
   box-shadow: inset 0 0 2px #d615c6, 0 0 2px #d615c6;
   filter: drop-shadow(0 0 0.1rem #3c0050);
+  transition: box-shadow 0.3s, color 0.3s, text-shadow 0.3s;
 }
 #text-below .btn-neon:hover {
-  box-shadow: inset 0 0 6px #d615c6, 0 0 6px #d615c6;
-  transition: 0.3s;
+  box-shadow: inset 0 0 6px #fc6df1, 0 0 6px #fc6df1;
+  color: #fc6df1;
+  text-shadow: 0 0 4px #fc6df1;
 }
 #text-below .btn-neon2 {
   display: inline-block;
   background-color: rgba(70, 70, 70, 0.25);
-  padding: 10px 20px;
-  transform: translateX(var(--buttonOffset));
+  padding: var(--button-padding) var(--button-padding2);
+  transform: translateX(var(--button-offset));
   border-radius: 50px;
   cursor: pointer;
-  border: 1px solid #d615c6;
-  color: #d615c6;
-  text-shadow: 0 0 4px #d615c6;
-  box-shadow: inset 0 0 2px #d615c6, 0 0 2px #d615c6;
+  border: 1px solid #7645ff;
+  color: #7645ff;
+  text-shadow: 0 0 4px #7645ff;
+  box-shadow: inset 0 0 2px #7645ff, 0 0 2px #7645ff;
   filter: drop-shadow(0 0 0.1rem #3c0050);
+  transition: box-shadow 0.3s, color 0.3s, text-shadow 0.3s;
 }
 #text-below .btn-neon2:hover {
-  box-shadow: inset 0 0 6px #d615c6, 0 0 6px #d615c6;
-  transition: 0.3s;
+  box-shadow: inset 0 0 6px #9a75ff, 0 0 6px #9a75ff;
+  color: #9a75ff;
+  text-shadow: 0 0 4px #9a75ff;
 }
 
 #mask {
