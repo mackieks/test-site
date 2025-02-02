@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", function() {
   const root = document.documentElement;
 
   function updateStyles() {
+    
+    // detect viewport height
+    const viewportHeight = window.innerHeight;
+    const wiiuHeight = `${viewportHeight * 0.25}px`;
+
     const imageWidth = image.clientWidth;
     const imageHeight = image.clientHeight;
     const textLength = "isfshax".length; // Adjust this to your word
@@ -10,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const fontSize = `${(imageWidth / textLength) * baseSizeAdjustment}px`;
     const nandWidth = `${imageWidth / 3.0}px`;
-    const nandLeft = `${imageWidth * 0.9}px`;
+    const nandLeft = `${imageWidth * 0.68}px`;
     const nandTop = `${imageHeight * 1.15}px`;
     const bodyLeft = `${image.offsetLeft}px`;
     const headerBelowTop = `${imageHeight * 2.2}px`;
@@ -19,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const dlSize = `${(imageWidth / "Download".length) * 0.42}px`;
     const bodySize = `${(imageWidth / "isfshax is a coldboot boot1 exploit for Wii U ".length) * 1.7}px`;
     const marginTop = `${imageHeight * 0.3}px`;
-    const dotLeft = `${imageWidth * 0.293}px`;
+    const dotLeft = `${imageWidth * 0.08}px`;
     const dotTop = `${imageHeight * 0.682}px`;
     const dotSize = `${imageWidth * 0.01}px`;
     const shineSize = `${imageWidth * 0.04}px`;
@@ -61,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
     root.style.setProperty("--button-offset", buttonOffset);
     root.style.setProperty("--credits-below-top", creditsBelowTop);
     root.style.setProperty("--credits-size", creditsSize);
+    root.style.setProperty("--wiiu-height", wiiuHeight);
   }
 
   // Update styles on load and resize
