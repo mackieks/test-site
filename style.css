@@ -41,7 +41,7 @@ div {
 
 #ui {
   transform-style: preserve-3d;
-  transform: translateY(-15vh);
+  transform: translateY(-18vh);
 }
 #ui .text {
   position: absolute;
@@ -271,4 +271,48 @@ div {
   font-family: "Neue Haas Grotesk Text Pro Medium";
   color: #b400b4;
   font-size: var(--header-size);
+  /* Neon btn */
+  /* Neon btn */
+}
+#text-below .btn-neon {
+  display: inline-block;
+  background-color: rgba(70, 70, 70, 0.25);
+  padding: 10px 20px;
+  margin: 0;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid #d615c6;
+  color: #d615c6;
+  text-shadow: 0 0 4px #d615c6;
+  box-shadow: inset 0 0 2px #d615c6, 0 0 2px #d615c6;
+  filter: drop-shadow(0 0 0.1rem #3c0050);
+}
+#text-below .btn-neon:hover {
+  box-shadow: inset 0 0 6px #d615c6, 0 0 6px #d615c6;
+  transition: 0.3s;
+}
+#text-below .btn-neon2 {
+  display: inline-block;
+  background-color: rgba(70, 70, 70, 0.25);
+  padding: 10px 20px;
+  transform: translateX(var(--buttonOffset));
+  border-radius: 50px;
+  cursor: pointer;
+  border: 1px solid #d615c6;
+  color: #d615c6;
+  text-shadow: 0 0 4px #d615c6;
+  box-shadow: inset 0 0 2px #d615c6, 0 0 2px #d615c6;
+  filter: drop-shadow(0 0 0.1rem #3c0050);
+}
+#text-below .btn-neon2:hover {
+  box-shadow: inset 0 0 6px #d615c6, 0 0 6px #d615c6;
+  transition: 0.3s;
+}
+
+#mask {
+  filter: drop-shadow(0 0 0.5rem #500064);
+}
+
+#mask2 {
+  filter: drop-shadow(0 0 0.5rem #500064);
 }
