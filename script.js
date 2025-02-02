@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const nandLeft = `${imageWidth * 0.9}px`;
     const nandTop = `${imageHeight * 1.1}px`;
     const bodyLeft = `${image.offsetLeft}px`;
-    const headerBelowTop = `${imageHeight * 2.15}px`;
+    const headerBelowTop = `${imageHeight * 2.2}px`;
     const bodyBelowTop = `${imageHeight * 1.05}px`;
-    const dlSize = `${(imageWidth / "Download".length) * 0.4}px`;
-    const bodySize = `${(imageWidth / "isfshax is a coldboot boot1 exploit for the Wii U".length) * 1.7}px`;
+    const dlSize = `${(imageWidth / "Download".length) * 0.42}px`;
+    const bodySize = `${(imageWidth / "isfshax is a coldboot boot1 exploit for Wii U ".length) * 1.7}px`;
     const marginTop = `${imageHeight * 0.3}px`;
     const dotLeft = `${imageWidth * 0.293}px`;
     const dotTop = `${imageHeight * 0.682}px`;
@@ -27,7 +27,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const bodyTextWidth = `${imageWidth * 0.7}px`;
     const bodyTextHeight = `${imageHeight * 0.5}px`;
     const bodyTextFontSize = `${imageWidth * 0.02}px`;
-    const buttonOffset = `${dlSize * 2.0}px`;
+    const uiTop = `${textTop}px`;
+    const buttonOffset = `${imageWidth * 0.025}px`;
+    const buttonOneSize = `${imageWidth * 0.05}px`;
+    const buttonPadding = `${imageWidth * 0.01}px`;
+    const buttonPadding2 = `${imageWidth * 0.025}px`;
 
     root.style.setProperty("--body-left", bodyLeft);
     root.style.setProperty("--header-below-top", headerBelowTop);
@@ -48,7 +52,11 @@ document.addEventListener("DOMContentLoaded", function() {
     root.style.setProperty("--body-text-width", bodyTextWidth);
     root.style.setProperty("--body-text-height", bodyTextHeight);
     root.style.setProperty("--body-text-font-size", bodyTextFontSize);
-    root.style.setProperty("--buttonOffset", 40);
+    root.style.setProperty("--ui-top", uiTop);
+    root.style.setProperty("--button-one-size", buttonOneSize);
+    root.style.setProperty("--button-padding", buttonPadding);
+    root.style.setProperty("--button-padding2", buttonPadding2);
+    root.style.setProperty("--button-offset", buttonOffset);
   }
 
   // Update styles on load and resize
