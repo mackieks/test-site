@@ -6,7 +6,16 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // detect viewport height
     const viewportHeight = window.innerHeight;
-    const wiiuHeight = `${viewportHeight * 0.25}px`;
+    const viewportWidth = window.innerWidth;
+    let wiiuHeight, wiiuWidth;
+    
+    if (viewportHeight > viewportWidth){
+      wiiuHeight = `100%`;
+      wiiuWidth = `${viewportWidth * 0.75}px`;
+    } else {
+      wiiuHeight = `${viewportHeight * 0.25}px`;
+      wiiuWidth = `100%`;
+    }
 
     const imageWidth = image.clientWidth;
     const imageHeight = image.clientHeight;
@@ -67,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
     root.style.setProperty("--credits-below-top", creditsBelowTop);
     root.style.setProperty("--credits-size", creditsSize);
     root.style.setProperty("--wiiu-height", wiiuHeight);
+    root.style.setProperty("--wiiu-width", wiiuWidth);
   }
 
   // Update styles on load and resize
