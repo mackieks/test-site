@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const dlSize = `${(imageWidth / "Download".length) * 0.42}px`;
     const bodySize = `${(imageWidth / "isfshax is a coldboot boot1 exploit for Wii U ".length) * 1.7}px`;
     const marginTop = `${imageHeight * 0.3}px`;
-    const dotLeft = `${imageWidth * 0.08}px`;
+    const dotLeft = `${imageWidth * 0.0785}px`;
     const dotTop = `${imageHeight * 0.682}px`;
     const dotSize = `${imageWidth * 0.01}px`;
     const shineSize = `${imageWidth * 0.04}px`;
