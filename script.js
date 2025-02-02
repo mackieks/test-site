@@ -52,4 +52,9 @@ document.addEventListener("DOMContentLoaded", function() {
   // Update styles on load and resize
   updateStyles();
   window.addEventListener("resize", updateStyles);
+
+  // Ensure functions run a few times after the page is finished loading
+  setTimeout(updateStyles, 100);
+  setTimeout(updateStyles, 200);
+  setTimeout(updateStyles, 300);
 });
