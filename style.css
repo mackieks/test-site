@@ -41,7 +41,7 @@ div {
 
 #ui {
   transform-style: preserve-3d;
-  transform: translateY(-15vh);
+  transform: translateY(-18vh);
 }
 #ui .text {
   position: absolute;
@@ -164,11 +164,11 @@ div {
   justify-content: center;
   position: relative;
   align-items: flex-start;
-  transform: translateY(-15vh);
+  transform: translateY(-18vh);
 }
 #image-container img {
-  max-width: 70%;
-  height: auto;
+  height: var(--wiiu-height);
+  width: 100%;
 }
 #image-container #body-text {
   display: flex;
