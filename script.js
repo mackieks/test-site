@@ -11,10 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const fontSize = `${(imageWidth / textLength) * baseSizeAdjustment}px`;
     const nandWidth = `${imageWidth / 3.0}px`;
     const nandLeft = `${imageWidth * 0.9}px`;
-    const nandTop = `${imageHeight * 1.1}px`;
+    const nandTop = `${imageHeight * 1.15}px`;
     const bodyLeft = `${image.offsetLeft}px`;
     const headerBelowTop = `${imageHeight * 2.2}px`;
     const bodyBelowTop = `${imageHeight * 1.05}px`;
+    const creditsBelowTop = `${imageHeight * 2.6}px`;
     const dlSize = `${(imageWidth / "Download".length) * 0.42}px`;
     const bodySize = `${(imageWidth / "isfshax is a coldboot boot1 exploit for Wii U ".length) * 1.7}px`;
     const marginTop = `${imageHeight * 0.3}px`;
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const buttonOneSize = `${imageWidth * 0.05}px`;
     const buttonPadding = `${imageWidth * 0.01}px`;
     const buttonPadding2 = `${imageWidth * 0.025}px`;
+    const creditsSize = `${(imageWidth / "isfshax is a coldboot boot1 exploit for Wii U ".length) * 1.2}px`;
 
     root.style.setProperty("--body-left", bodyLeft);
     root.style.setProperty("--header-below-top", headerBelowTop);
@@ -57,6 +59,8 @@ document.addEventListener("DOMContentLoaded", function() {
     root.style.setProperty("--button-padding", buttonPadding);
     root.style.setProperty("--button-padding2", buttonPadding2);
     root.style.setProperty("--button-offset", buttonOffset);
+    root.style.setProperty("--credits-below-top", creditsBelowTop);
+    root.style.setProperty("--credits-size", creditsSize);
   }
 
   // Update styles on load and resize
